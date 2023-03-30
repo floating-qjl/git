@@ -1,0 +1,92 @@
+Git - 分布式版本控制工具：
+  分布式版本控制系统没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样工作的时候，无需要联网了，
+  因为版本库就在你自己的电脑上。多人协作只需要各自的修改推送给对方，就能互相看到对方的修改了。
+
+
+linux基本命令：
+
+ls/ll                查看当前目录
+cat                  查看文件内容
+touch                创建文件
+vi                   vi编辑器（使用vi编辑器是为了方便展示效果，学员可以记事本、editPlus、notPad++等其它编辑器)
+
+
+
+Git GUI: Git提供的图形界面工具
+Git Bash: Git提供的命令行工具
+
+
+
+基本配置：
+  1. 打开Git Bash
+  2.设置用户信息
+    git config --global user.name "itcast"
+    git config --global user.email "helo@itcast.cn"
+  
+  查看配置信息
+    git config --global user.name
+    git config --global user.email
+
+
+部分windows系统不允许用户创建点号开头的文件，可以打开gitBash,执行touch ~/.bashrc，表示创建该文件，执行source ~/.bashrc，表示执行该文件。
+
+
+
+
+
+
+解决GitBash乱码问题：
+  1.打开GitBash执行下面命令
+    git config --global core.quotepath false
+  2.${git_home}/etc/bash.bashrc文件最后加入下面两行（git_home为git安装路径）
+    export LANG="zh_CN.UTF-8"
+    export LC_ALL="zh_CN.UTF-8"
+
+
+
+
+
+获取本地仓库：
+  要使用Git对我们的代码进行版本控制，首先需要获得本地仓库
+    1）在电脑的任意位置创建一个空目录（例如test)作为我们的本地Git仓库
+    2）进入这个目录中，点击右键打开Git bash窗口
+    3）执行命令git init
+    4）如果创建成功后可在文件夹下看到隐藏的.git目录。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
